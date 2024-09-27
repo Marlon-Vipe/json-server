@@ -2,8 +2,8 @@
     "customers": [
     {
         "customer_id": 1,
-        "name": "John Doe",
-        "email": "john.doe@example.com",
+        "name": "Marlon Villalona",
+        "email": "marlon@example.com",
         "phone": "555-1234",
         "address": {
         "street": "123 Main St",
