@@ -1,70 +1,123 @@
 {
-    "customers": [
+  "customers": [
     {
-        "customer_id": 1,
-        "name": "Marlon Villalona",
-        "email": "marlon@example.com",
-        "phone": "555-1234",
-        "address": {
-        "street": "123 Main St",
-        "city": "Anytown",
-        "state": "NY",
-        "zip": "12345"
-        },
-        "created_at": "2023-09-23T14:48:00Z"
-    }
-    ],
-    "products": [
-    {
-        "product_id": 1,
-        "name": "Laptop",
-        "description": "15-inch, 1TB SSD, 16GB RAM",
-        "price": 1200.00,
-        "stock_quantity": 50
+      "name": "Alice Brown",
+      "email": "alice.brown@example.com",
+      "phone": "555-9876",
+      "address": {
+        "street": "456 Bakery Ave",
+        "city": "Sweetville",
+        "state": "CA",
+        "zip": "90001"
+      },
+      "created_at": "2024-09-23T12:30:00Z"
     },
     {
-        "product_id": 2,
-        "name": "Smartphone",
-        "description": "6.5-inch screen, 128GB storage",
-        "price": 800.00,
-        "stock_quantity": 100
+      "name": "Carlos Hernandez",
+      "email": "carlos.hernandez@example.com",
+      "phone": "555-2345",
+      "address": {
+        "street": "789 Pastry St",
+        "city": "Dessertown",
+        "state": "TX",
+        "zip": "75001"
+      },
+      "created_at": "2024-09-20T08:45:00Z"
     }
-    ],
-    "invoices": [
+  ],
+  "products": [
     {
-        "invoice_id": 1,
-        "customer_id": 1,
-        "date": "2023-09-23",
-        "items": [
+      "name": "Chocolate Cake",
+      "description": "Rich chocolate cake with layers of creamy chocolate frosting",
+      "price": 25.00,
+      "category": "cakes",
+      "stock_quantity": 15
+    },
+    {
+      "name": "Vanilla Cupcakes",
+      "description": "Fluffy vanilla cupcakes topped with buttercream frosting",
+      "price": 3.50,
+      "category": "cupcakes",
+      "stock_quantity": 50
+    },
+    {
+      "name": "Cinnamon Rolls",
+      "description": "Soft, warm cinnamon rolls with cream cheese icing",
+      "price": 4.00,
+      "category": "pastries",
+      "stock_quantity": 30
+    },
+    {
+      "name": "Apple Pie",
+      "description": "Classic apple pie with a buttery crust and spiced apple filling",
+      "price": 20.00,
+      "category": "pies",
+      "stock_quantity": 10
+    },
+    {
+      "name": "Chocolate Chip Cookies",
+      "description": "Chewy cookies packed with chocolate chips",
+      "price": 1.50,
+      "category": "cookies",
+      "stock_quantity": 100
+    }
+  ],
+  "invoices": [
+    {
+      "customer_name": "Alice Brown",
+      "date": "2024-09-23",
+      "items": [
         {
-            "product_id": 1,
-            "quantity": 1,
-            "price": 1200.00,
-            "total": 1200.00
+          "product_name": "Chocolate Cake",
+          "quantity": 1,
+          "price": 25.00,
+          "total": 25.00
         },
         {
-            "product_id": 2,
-            "quantity": 2,
-            "price": 800.00,
-            "total": 1600.00
+          "product_name": "Cinnamon Rolls",
+          "quantity": 3,
+          "price": 4.00,
+          "total": 12.00
         }
-        ],
-        "subtotal": 2800.00,
-        "tax": 224.00,
-        "total": 3024.00,
-        "status": "paid",
-        "payment_method": "credit_card",
-        "paid_at": "2023-09-23T15:00:00Z"
-    }
-    ],
-    "payments": [
+      ],
+      "subtotal": 37.00,
+      "tax": 2.96,
+      "total": 39.96,
+      "status": "pending",
+      "payment_method": "cash"
+    },
     {
-        "payment_id": 1,
-        "invoice_id": 1,
-        "amount": 3024.00,
-        "method": "credit_card",
-        "date": "2023-09-23T15:00:00Z",
-        "status": "completed"
+      "customer_name": "Carlos Hernandez",
+      "date": "2024-09-20",
+      "items": [
+        {
+          "product_name": "Vanilla Cupcakes",
+          "quantity": 6,
+          "price": 3.50,
+          "total": 21.00
+        },
+        {
+          "product_name": "Apple Pie",
+          "quantity": 1,
+          "price": 20.00,
+          "total": 20.00
+        }
+      ],
+      "subtotal": 41.00,
+      "tax": 3.28,
+      "total": 44.28,
+      "status": "paid",
+      "payment_method": "credit_card",
+      "paid_at": "2024-09-20T12:30:00Z"
     }
-    ]
+  ],
+  "payments": [
+    {
+      "invoice_date": "2024-09-20",
+      "amount": 44.28,
+      "method": "credit_card",
+      "status": "completed",
+      "date": "2024-09-20T12:30:00Z"
+    }
+  ]
 }
